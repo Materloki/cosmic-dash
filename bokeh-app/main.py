@@ -14,7 +14,7 @@ from bokeh.tile_providers import get_provider, Vendors
 
 
 # Abrindo o dataset (já manipulado para melhor análise)
-df = pd.read_csv(join(dirname(__file__),"data/train.csv")
+df = pd.read_csv("data.csv")
 schools = {'escola': ['IF-USP', 'IFSP'],
            'latitude':[-2699887, -2695467],
            'longitude':[-5202510,-5190044] }
@@ -60,4 +60,3 @@ p2.circle(x='longitude', y='latitude', fill_color='blue', size=10, hover_color="
 
 layout = row(p2, column(menu_escolas, menu_dia), p1)
 curdoc().add_root(layout)
-curduc().title = "Raios Cosmicos"
