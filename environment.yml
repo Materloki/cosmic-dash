@@ -1,5 +1,4 @@
 dependencies:
-  - numpy
   - bokeh
   - pandas
   - scipy
