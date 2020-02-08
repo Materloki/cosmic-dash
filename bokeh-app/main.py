@@ -4,6 +4,7 @@ Dashboard utilizada pelos alunos para análise de dados dos raios cósmicos
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+from os.path import join, dirname
 
 from bokeh.layouts import row, column
 from bokeh.models import ColumnDataSource, Select, Slider
@@ -14,7 +15,7 @@ from bokeh.tile_providers import get_provider, Vendors
 
 
 # Abrindo o dataset (já manipulado para melhor análise)
-df = pd.read_csv("data/train.csv")
+df = pd.read_csv(join(dirname(__file__),"data/train.csv")
 schools = {'escola': ['IF-USP', 'IFSP'],
            'latitude':[-2699887, -2695467],
            'longitude':[-5202510,-5190044] }
