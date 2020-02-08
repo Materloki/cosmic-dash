@@ -2,7 +2,6 @@
 Dashboard utilizada pelos alunos para análise de dados dos raios cósmicos
 '''
 import pandas as pd
-import matplotlib.pyplot as plt
 import numpy as np
 from os.path import join, dirname
 
